@@ -1,0 +1,13 @@
+model = "gpt-5.3-codex"
+model_reasoning_effort = "high"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+features.powershell_utf8 = true
+personality = "pragmatic"
+
+[mcp_servers.context7]
+url = "https://mcp.context7.com/mcp"
+http_headers = { "CONTEXT7_API_KEY" = "YOUR_API_KEY" }
+
+[notice.model_migrations]
+"gpt-5.2" = "gpt-5.2-codex"
