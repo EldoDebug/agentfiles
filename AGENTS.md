@@ -7,6 +7,10 @@
 - **Fail Fast**: Validate early, return early, error explicitly
 - **Explicit over Implicit**: No hidden side effects or magic
 
+## Module Boundaries
+- Avoid mixing concerns in a single file/module (SRP violations).
+- Keep module/file responsibilities cohesive and split them when concerns start to diverge.
+
 ## Comments
 - Code should be self-documenting
 - Comment "why", not "what"
