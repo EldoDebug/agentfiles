@@ -1,9 +1,15 @@
 model = "gpt-5.3-codex"
-model_reasoning_effort = "high"
+model_reasoning_effort = "medium"
 approval_policy = "never"
 sandbox_mode = "danger-full-access"
-features.powershell_utf8 = true
 personality = "pragmatic"
+
+[features]
+powershell_utf8 = true
+unified_exec = true
+shell_snapshot = true
+steer = true
+collab = true
 
 [mcp_servers.context7]
 url = "https://mcp.context7.com/mcp"
