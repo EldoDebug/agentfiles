@@ -25,5 +25,9 @@
 - If you have even the slightest doubt, feel free to ask.
 - When asking a question, explain the pros and cons.
 
+## Sub Agents
+- **Usage Policy**: Use sub agents proactively whenever they can improve speed, clarity, or task parallelization.
+- **Execution Principle**: If a task can be split into clear sub-problems, delegate early and in parallel where reasonable.
+
 ## Response Language
 Please respond in Japanese
