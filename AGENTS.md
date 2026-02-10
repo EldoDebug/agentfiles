@@ -1,5 +1,6 @@
 ## Coding Principles
 - **Simplicity First**: Prefer readable code over clever solutions
+- **User-Friendly & Readable**: Aim for user-friendly, human-readable code and thoughtful design
 - **DRY**: Extract common logic, avoid premature abstraction
 - **YAGNI**: Implement only what's needed now
 - **Single Responsibility**: One function/module does one thing well
@@ -19,8 +20,10 @@
 - **Dependencies**: When adding libraries with CLI-based package managers (e.g., cargo, pip, npm), add them via the command line so versions and lockfiles stay up to date.
 - **Staying Current**: If you're unsure because the information may be outdated, use Context7 and/or websearch to verify the latest details.
 
-## Planning Mode
+## Questions
 - When in plan mode and there is no existing code, propose multiple API designs, explain pros and cons, and ask questions before implementation.
+- If you have even the slightest doubt, feel free to ask.
+- When asking a question, explain the pros and cons.
 
 ## Response Language
 Please respond in Japanese
