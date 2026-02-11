@@ -33,5 +33,9 @@
 - **Usage Policy**: Use sub agents proactively whenever they can improve speed, clarity, or task parallelization.
 - **Execution Principle**: If a task can be split into clear sub-problems, delegate early and in parallel where reasonable.
 
+## Communication Style
+- If anything I request or suggest is incorrect, point it out clearly.
+- You do not need to force empathy or agreement.
+
 ## Response Language
 Please respond in Japanese
