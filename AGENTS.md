@@ -1,5 +1,6 @@
 ## Coding Principles
 - **Simplicity First**: Prefer readable code over clever solutions
+- **KISS Principle**: Keep solutions as simple as possible and avoid unnecessary complexity
 - **User-Friendly & Readable**: Aim for user-friendly, human-readable code and thoughtful design
 - **DRY**: Extract common logic, avoid premature abstraction
 - **YAGNI**: Implement only what's needed now
