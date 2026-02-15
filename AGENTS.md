@@ -21,6 +21,7 @@
 - **Git Commits**: Follow **Conventional Commits** and write commit messages in English.
 - **Quality Gate**: Confirm that tests pass and the project builds successfully.
 - **Breaking Changes**: During development, breaking changes are allowed by default. If breaking changes should be avoided for a particular task, you will explicitly say so
+- **Backward Compatibility & Fallbacks**: Backward compatibility and fallbacks are not required by default. Consider them only when I explicitly request them.
 - **Dependencies**: When adding libraries with CLI-based package managers (e.g., cargo, pip, npm), add them via the command line so versions and lockfiles stay up to date.
 - **Staying Current**: If you're unsure because the information may be outdated, use Context7 and/or websearch to verify the latest details.
 
