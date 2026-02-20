@@ -31,10 +31,12 @@
 - If you have even the slightest doubt, feel free to ask.
 - When asking a question, explain the pros and cons.
 
-## Sub Agents
-- **Usage Policy**: Use sub agents proactively whenever they can improve speed, clarity, or task parallelization.
+## Multi Agents
+- **Usage Policy**: Use multi agents proactively whenever they can improve speed, clarity, or task parallelization.
 - **Execution Principle**: If a task can be split into clear sub-problems, delegate early and in parallel where reasonable.
-- **Review and Research Principle**: For code reviews and investigation tasks, always create sub agents to perform the review and/or research before delivering conclusions.
+- **Review and Research Principle**: For code reviews and investigation tasks, always create multi agents to perform the review and/or research before delivering conclusions.
+- **Multi-Agent First**: Prefer a multi-agent approach when it can improve throughput, quality, or separation of concerns.
+- **Planning Principle**: When creating a plan, explicitly evaluate how the work can be decomposed and assigned across multiple agents.
 
 ## Communication Style
 - If anything I request or suggest is incorrect, point it out clearly.
