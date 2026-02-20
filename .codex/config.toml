@@ -14,6 +14,15 @@ steer = true
 [agents]
 max_threads = 32
 
+[agents.default]
+config_file = "agents/default.toml"
+
+[agents.worker]
+config_file = "agents/worker.toml"
+
+[agents.explorer]
+config_file = "agents/explorer.toml"
+
 [agents.fast_explorer]
 description = "Fastest codebase research agent (no edits). Limited context window—use by splitting investigations into small, granular chunks (by folder, feature, module, or file)."
 config_file = "agents/fast_explorer.toml"
@@ -29,6 +38,3 @@ config_file = "agents/code_reviewer.toml"
 [mcp_servers.context7]
 url = "https://mcp.context7.com/mcp"
 http_headers = { "CONTEXT7_API_KEY" = "YOUR_API_KEY" }
-
-[notice.model_migrations]
-"gpt-5.2" = "gpt-5.2-codex"
