@@ -15,12 +15,15 @@ steer = true
 max_threads = 32
 
 [agents.default]
+description = "General-purpose helper."
 config_file = "agents/default.toml"
 
 [agents.worker]
+description = "Implementation work ."
 config_file = "agents/worker.toml"
 
 [agents.explorer]
+description = "Normal codebase research agent (no edits)."
 config_file = "agents/explorer.toml"
 
 [agents.fast_explorer]
@@ -34,6 +37,14 @@ config_file = "agents/fast_worker.toml"
 [agents.code_reviewer]
 description = "Comprehensive scope reviewer to run after implementation is fully complete. Review the entire affected area for correctness and completeness."
 config_file = "agents/code_reviewer.toml"
+
+[agents.commit]
+description = "Commit changes to the repository."
+config_file = "agents/commit.toml"
+
+[agents.research]
+description = "Researching the latest library information and papers."
+config_file = "agents/research.toml"
 
 [mcp_servers.context7]
 url = "https://mcp.context7.com/mcp"
