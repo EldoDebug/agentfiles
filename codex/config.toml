@@ -26,21 +26,9 @@ config_file = "agents/worker.toml"
 description = "Normal codebase research agent (no edits)."
 config_file = "agents/explorer.toml"
 
-[agents.fast_explorer]
-description = "Fastest codebase research agent (no edits). Limited context window—use by splitting investigations into small, granular chunks (by folder, feature, module, or file)."
-config_file = "agents/fast_explorer.toml"
-
-[agents.fast_worker]
-description = "Fast scoped implementation agent for simple, straightforward tasks. Limited context window—split work into small, well-defined chunks (by folder, feature, module, or file) and handle them separately."
-config_file = "agents/fast_worker.toml"
-
 [agents.code_reviewer]
 description = "Comprehensive scope reviewer to run after implementation is fully complete. Review the entire affected area for correctness and completeness."
 config_file = "agents/code_reviewer.toml"
-
-[agents.commit]
-description = "Commit changes to the repository."
-config_file = "agents/commit.toml"
 
 [agents.research]
 description = "Researching the latest library information and papers."
