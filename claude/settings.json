@@ -10,7 +10,9 @@
     "clangd-lsp@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true
+    "code-simplifier@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true
   },
   "language": "Japanese",
   "alwaysThinkingEnabled": true,
