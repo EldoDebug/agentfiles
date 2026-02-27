@@ -16,15 +16,17 @@
 ## Development Workflow
 - **Full Implementation**: Deliver a complete implementation, not an MVP.
 - **Git Commits**: Follow **Conventional Commits** and write commit messages in English.
-- **Pre-Commit Simplification**: Before committing, use the `code-simplifier` agent.
-- **Code Review**: After `code-simplifier` completes, use the `codex-reviewer` subagent to review the changes before committing. If the review finds issues, fix them and repeat the review cycle until no major issues remain.
-- **Plan Review**: After implementing a plan from plan mode, use the `codex-reviewer` subagent to verify the implementation matches the plan. If the review finds issues, fix them and repeat the review cycle until no major issues remain.
-- **Agent Teams**: For complex logic or large-scale implementations, use agent teams to parallelize and coordinate work across multiple agents.
+- **Plan Review**: For medium-to-large implementations, pass the plan file to `codex-reviewer` before starting implementation.
+- **Post-Implementation Review**: After completing a medium-to-large implementation:
+  1. Run `code-simplifier`
+  2. Run `codex-reviewer`
+  3. Fix any critical or moderate issues found, then repeat from step 2 until none remain
+- **Minor Fixes**: Skip `code-simplifier` and `codex-reviewer` for small changes (a few lines) after the main implementation is complete.
+- **Agent Teams**: Only for large-scale implementations. Design the plan with agent teams in mind from the start — not something to consider at execution time. For small-to-medium implementations, do not use agent teams.
 - **Quality Gate**: Confirm that tests pass and the project builds successfully.
 - **Breaking Changes**: During development, breaking changes are allowed by default. If breaking changes should be avoided for a particular task, you will explicitly say so
 - **Dependencies**: When adding libraries with CLI-based package managers (e.g., cargo, pip, npm), add them via the command line so versions and lockfiles stay up to date.
 - **Staying Current**: If you're unsure because the information may be outdated, use Context7 and/or websearch to verify the latest details.
-- **Dependencies**: When adding libraries with CLI-based package managers (e.g., cargo, pip, npm), add them via the command line so versions and lockfiles stay up to date.
 
 ## Questions
 - If you have even the slightest doubt, feel free to ask.
