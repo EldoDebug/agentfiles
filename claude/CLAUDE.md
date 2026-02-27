@@ -17,8 +17,9 @@
 - **Full Implementation**: Deliver a complete implementation, not an MVP.
 - **Git Commits**: Follow **Conventional Commits** and write commit messages in English.
 - **Pre-Commit Simplification**: Before committing, use the `code-simplifier` agent.
-- **Code Review**: After `code-simplifier` completes, use the `codex-reviewer` subagent to review the changes before committing.
-- **Plan Review**: After implementing a plan from plan mode, use the `codex-reviewer` subagent to verify the implementation matches the plan.
+- **Code Review**: After `code-simplifier` completes, use the `codex-reviewer` subagent to review the changes before committing. If the review finds issues, fix them and repeat the review cycle until no major issues remain.
+- **Plan Review**: After implementing a plan from plan mode, use the `codex-reviewer` subagent to verify the implementation matches the plan. If the review finds issues, fix them and repeat the review cycle until no major issues remain.
+- **Agent Teams**: For complex logic or large-scale implementations, use agent teams to parallelize and coordinate work across multiple agents.
 - **Quality Gate**: Confirm that tests pass and the project builds successfully.
 - **Breaking Changes**: During development, breaking changes are allowed by default. If breaking changes should be avoided for a particular task, you will explicitly say so
 - **Dependencies**: When adding libraries with CLI-based package managers (e.g., cargo, pip, npm), add them via the command line so versions and lockfiles stay up to date.
