@@ -16,12 +16,12 @@
 ## Development Workflow
 - **Full Implementation**: Deliver a complete implementation, not an MVP.
 - **Git Commits**: Follow **Conventional Commits** and write commit messages in English.
-- **When Stuck**: If stuck during implementation, consult `copilot-cli` skill for guidance.
+- **When Stuck**: If stuck during implementation, consult `copilot` or/and `gemini` agent for guidance.
 - **Post-Implementation Review**: After completing a medium-to-large implementation:
   1. Run `code-simplifier`
-  2. Run `copilot-cli` skill to review the changes (instruct Copilot to run `git diff` itself and ask for a code review)
+  2. Run `copilot` or/and `gemini` agent to review the changes (instruct to run `git diff` itself and ask for a code review)
   3. Fix any critical or moderate issues found, then repeat from step 2 until none remain
-- **Minor Fixes**: Skip `code-simplifier` and `copilot-cli` review for small changes (a few lines) after the main implementation is complete.
+- **Minor Fixes**: Skip `code-simplifier` and `copilot` and/or `gemini` review for small changes (a few lines) after the main implementation is complete.
 - **Quality Gate**: Confirm that tests pass and the project builds successfully.
 - **Breaking Changes**: During development, breaking changes are allowed by default. If breaking changes should be avoided for a particular task, you will explicitly say so
 - **Dependencies**: When adding libraries with CLI-based package managers (e.g., cargo, pip, npm), add them via the command line so versions and lockfiles stay up to date.
