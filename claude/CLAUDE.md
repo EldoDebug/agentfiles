@@ -16,12 +16,12 @@
 ## Development Workflow
 - **Full Implementation**: Deliver a complete implementation, not an MVP.
 - **Git Commits**: Follow **Conventional Commits** and write commit messages in English.
-- **Plan Review**: For medium-to-large implementations, pass the plan file to `codex-reviewer` before starting implementation.
+- **When Stuck**: If stuck during implementation, consult `copilot-cli` skill for guidance.
 - **Post-Implementation Review**: After completing a medium-to-large implementation:
   1. Run `code-simplifier`
-  2. Run `codex-reviewer`
+  2. Run `copilot-cli` skill to review the changes (check with `git diff` and ask for a code review)
   3. Fix any critical or moderate issues found, then repeat from step 2 until none remain
-- **Minor Fixes**: Skip `code-simplifier` and `codex-reviewer` for small changes (a few lines) after the main implementation is complete.
+- **Minor Fixes**: Skip `code-simplifier` and `copilot-cli` review for small changes (a few lines) after the main implementation is complete.
 - **Agent Teams**: Only for large-scale implementations. Design the plan with agent teams in mind from the start — not something to consider at execution time. For small-to-medium implementations, do not use agent teams.
 - **Quality Gate**: Confirm that tests pass and the project builds successfully.
 - **Breaking Changes**: During development, breaking changes are allowed by default. If breaking changes should be avoided for a particular task, you will explicitly say so
