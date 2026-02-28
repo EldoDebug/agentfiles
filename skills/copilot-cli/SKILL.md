@@ -37,8 +37,10 @@ copilot -p "Review this code and suggest improvements:\n\n$(cat path/to/file.ts)
 
 ### Git diff review
 
+Ask Copilot to run `git diff` itself and review the changes:
+
 ```bash
-copilot -p "Review these changes:\n\n$(git diff HEAD)" --yolo --silent
+copilot -p "Run git diff to see the latest changes, then do a code review of those changes." --yolo --silent
 ```
 
 ### Codebase-wide questions
@@ -62,6 +64,6 @@ With `--silent`, only the Copilot response body is written to stdout. Present th
 ## Steps
 
 1. Understand what the user wants (question, review target, etc.)
-2. Read relevant file contents or `git diff` as needed
+2. For code reviews, instruct Copilot to run `git diff` itself — do not inline the diff in the prompt
 3. Run `copilot -p "..." --yolo --silent`
 4. Present the output to the user and suggest follow-up actions if appropriate
